@@ -30,7 +30,7 @@ Your task is to complete the remaining functionality required to fully manage us
 ### 1. Clone the repository
 
 ```bash
-git clone https://bitbucket.org/pablososa/laravel-live-coding.git
+git clone https://github.com/jcguerra/laravel_live_code.git
 cd laravel-live-code
 ```
 
