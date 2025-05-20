@@ -31,7 +31,7 @@ Your task is to complete the remaining functionality required to fully manage us
 
 ```bash
 git clone https://bitbucket.org/pablososa/laravel-live-coding.git
-cd laravel-live-coding
+cd laravel-live-code
 ```
 
 ### 2. Setup and run containers
