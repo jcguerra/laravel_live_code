@@ -1,0 +1,2 @@
+const response = pm.response.json();
+pm.globals.set('token', response.token);
