@@ -11,14 +11,6 @@ class NotePolicy
     use HandlesAuthorization;
 
     /**
-     * Determine if the user can view the note.
-     */
-    public function view(User $user, Note $note): bool
-    {
-        return $user->id === $note->user_id;
-    }
-
-    /**
      * Determine whether the user can update the note.
      */
     public function update(User $user, Note $note): bool
@@ -41,4 +33,4 @@ class NotePolicy
     {
         return $user->id === $note->user_id;
     }
-} 
+}

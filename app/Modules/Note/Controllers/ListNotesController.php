@@ -5,9 +5,14 @@ namespace App\Modules\Note\Controllers;
 use App\Modules\Note\Models\Note;
 use App\Modules\Note\Requests\ListNotesRequest;
 use Illuminate\Http\JsonResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 class ListNotesController
 {
+    /**
+     * @param ListNotesRequest $request
+     * @return JsonResponse
+     */
     public function __invoke(ListNotesRequest $request): JsonResponse
     {
         $notes = Note::query()
@@ -19,6 +24,6 @@ class ListNotesController
             ->select('id', 'title', 'content', 'status', 'user_id', 'created_at')
             ->paginate(10);
 
-        return response()->json($notes);
+        return response()->json($notes, Response::HTTP_OK);
     }
 }
